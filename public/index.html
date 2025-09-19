@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="https://codewithovi.blogspot.com/" class="logo">Portfolio</a>
+			<a href="admin.html" class="logo">Admin</a>
+       
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Creative Works</h1>
+        <p class="subtitle">Click on any project to see a preview and download the file.</p>
+
+        <div class="project-grid" id="projectGrid">
+            <!-- Project cards will be injected here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Project Preview Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalPreview">
+                <!-- Preview content (image, iframe, icon) will be injected here -->
+            </div>
+            <div class="modal-actions">
+                <a id="downloadButton" class="modal-button" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
